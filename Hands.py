@@ -32,8 +32,8 @@ with mp_hands.Hands(
         print(hand_landmarks)
 
         center_coordinates = (
-          int(hand_landmarks.landmark[1-8].x * image_width), 
-          int(hand_landmarks.landmark[1-8].y * image_height)
+          int(hand_landmarks.landmark[8].x * image_width), 
+          int(hand_landmarks.landmark[8].y * image_height)
         )
         radius = 20
         color = (0, 0, 255)
